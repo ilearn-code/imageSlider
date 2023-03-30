@@ -18,8 +18,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mViewPager = (ViewPager)findViewById(R.id.viewPagerMain);
 
+        mViewPager = (ViewPager)findViewById(R.id.viewPagerMain);
+      mViewPager.setPadding(130, 0, 130, 0);
         // Initializing the ViewPagerAdapter
         mViewPagerAdapter = new adapter(MainActivity.this, images);
 
